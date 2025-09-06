@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html#github-getting-started-docs",
+    "href": "index.html#github-getting-started-docs",
+    "title": "",
+    "section": "{{< fa brands github >}} Github: Getting started docs",
+    "text": "{{&lt; fa brands github &gt;}} Github: Getting started docs\n\n\nFigure 1: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "index.html#github-getting-started-docs-1",
+    "href": "index.html#github-getting-started-docs-1",
+    "title": "",
+    "section": "{{< fa brands github >}} Github: Getting started docs",
+    "text": "{{&lt; fa brands github &gt;}} Github: Getting started docs\n\n\nFigure 2: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
+  },
+  {
+    "objectID": "index.html#title-of-the-slide",
+    "href": "index.html#title-of-the-slide",
+    "title": "",
+    "section": "Title of the slide",
+    "text": "Title of the slide\n\nBullet point 1\nBullet point 2\nBullet point 3\n\nBullet point 3.1\nBullet point 3.2\n\n\n\nSciortino et al. 2017 in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008;\nHe et al. 2021 in Front. Med. https://doi.org/10.3389/fmed.2021.729978\n\n\nNotes goes here"
+  },
+  {
+    "objectID": "index.html#my-journey",
+    "href": "index.html#my-journey",
+    "title": "",
+    "section": "My Journey",
+    "text": "My Journey\n\n\n\n\n\n\n\n\nNotes goes here for my journey"
+  }
+]
