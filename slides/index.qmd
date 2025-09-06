@@ -1,0 +1,159 @@
+---
+title: ""
+subtitle: ""
+
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    controls: false
+    width: 1280 #1440 #1920 #1050
+    height: 720
+    margin: 0.025
+    controls-layout: bottom-right
+    preview-links: auto
+    logo: favicon.svg
+    theme: dark
+    #css:
+      #- css/default.css
+      #- css/callouts-html.css
+    #footer: <https://quarto.org>
+  gfm:
+    author: Miguel Xochicale
+#revealjs-plugins:
+#    - subtitles
+---
+
+# {.title-slide .centeredslide background-iframe="https://saforem2.github.io/grid-worms-animation/" loading="lazy"}
+
+::: {style="background-color: rgba(22,22,22,0.75); border-radius: 10px; text-align:center; padding: 0px; padding-left: 1.5em; padding-right: 1.5em; max-width: min-content; min-width: max-content; margin-left: auto; margin-right: auto; padding-top: 0.2em; padding-bottom: 0.2em; line-height: 1.5em!important;"}
+
+
+<span style="color:#939393; font-size:1.75em; text-align:left; display:block;">
+From Code to Care:    
+The Emerging Role of   
+Physical AI in Healthcare
+</span>  
+
+[<br>&nbsp;]{style="padding-bottom: 0.25rem;"}  
+[{{< fa solid home >}}](http://mxochicale.github.io/) Miguel Xochicale   
+[
+  [
+  [{{< fa brands github >}} `physical-ai-in-healthcare-slides`](https://github.com/mxochicale/physical-ai-in-healthcare-slides)
+  ]{style="border-bottom: 0.5px solid #00ccff;"}
+]{style="font-size:0.45em;"}
+:::
+
+
+::: footer
+[Q4-2025 [(grid-worms-animation 2023 by saforem2)](https://github.com/saforem2/grid-worms-animation/)]{.dim-text style="text-align:left;'}
+:::
+
+
+::: {.notes}
+  [[`open-healthcare-slides`](https://github.com/mxochicale/physical-ai-in-healthcare-slides/)]{style="border-bottom: 0.5px solid #00ccff;"}
+:::
+
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+# Overview {style="font-size: 60%;"} 
+
+* [Section title 1](#sectag_title_1)
+* [Section title 2](#sectag_title_2)
+<!--  Comments -->
+<!--  * [Open-Source Software in Healthcare](#sec-ossh) -->
+
+
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+# Section title 1 {#sectag_title_1}
+Subsection title
+
+::: {.notes}
+  Notes goes here
+:::
+
+
+## {{< fa brands github >}} Github: Getting started docs
+
+::: {#fig-template}
+
+![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
+
+Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow. 
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+# Section title 2 {#sectag_title_2}
+Subsection title
+
+::: {.notes}
+  Notes goes here
+:::
+
+
+## {{< fa brands github >}} Github: Getting started docs
+
+::: {#fig-template}
+
+![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
+
+Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow. 
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## Title of the slide
+
+* Bullet point 1
+* Bullet point 2
+* **Bullet point** 3
+  * Bullet point 3.1
+  * Bullet point 3.2
+
+
+::: {style="font-size: 40%;"}
+**Sciortino et al. 2017** in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008;      
+**He et al. 2021** in Front. Med. https://doi.org/10.3389/fmed.2021.729978
+:::
+::: {.notes}
+  Notes goes here
+:::
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+# Extra slides
+
+::: {.notes}
+  Notes goes here
+:::
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## My Journey
+
+::: {#sec-mt style="margin-top: 0px; font-size: 50%;"} 
+![](figures/mx.svg){fig-align="center" width="100%"}
+:::
+
+::: {.notes}
+  Notes goes here for my journey
+:::
