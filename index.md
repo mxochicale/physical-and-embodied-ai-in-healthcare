@@ -10,8 +10,8 @@ The Emerging Role of
 Physical AI in Healthcare </span>
 
 <span style="padding-bottom: 0.25rem;"><br> </span>  
-[{{< fa solid home >}}](http://mxochicale.github.io/) Miguel Xochicale  
-<span style="font-size:0.45em;"><span style="border-bottom: 0.5px solid #00ccff;">[{{< fa brands github >}}
+[](http://mxochicale.github.io/) Miguel Xochicale  
+<span style="font-size:0.45em;"><span style="border-bottom: 0.5px solid #00ccff;">[
 `physical-ai-in-healthcare-slides`](https://github.com/mxochicale/physical-ai-in-healthcare-slides)</span></span>
 
 </div>
@@ -50,7 +50,7 @@ Notes goes here
 
 </div>
 
-## {{< fa brands github >}} Github: Getting started docs
+##  Github: Getting started docs
 
 <div id="fig-template">
 
@@ -80,7 +80,7 @@ Notes goes here
 
 </div>
 
-## {{< fa brands github >}} Github: Getting started docs
+##  Github: Getting started docs
 
 <div id="fig-template">
 
