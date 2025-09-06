@@ -52,7 +52,7 @@ $ tree
 
 
 ## Commit and upload slides
-* first commit
+* (1/3) first commit
 ```
 git add .
 git commit -m ':fire: 1st commit: adds scalfolding for slides #1'
@@ -60,7 +60,7 @@ git branch -M main
 git push -u origin main
 ```
 
-* Create gh-pages branch
+* (2/3) Create gh-pages branch
 ```
 git checkout --orphan gh-pages 
 #An orphan branch is not connected to the other branches and commits, and its working tree has no files at all. 
@@ -71,18 +71,17 @@ git push origin gh-pages
 git checkout main
 #https://jiafulow.github.io/blog/2020/07/09/create-gh-pages-branch-in-existing-repo/
 ```
-See [hash for template]( TODO_HASH_TEMPLATE )
-
-* Select deploy from branch and select gh-pages
+See [hash for template](https://github.com/mxochicale/physical-ai-in-healthcare-slides/commit/74d43f86ec3fce761d0e92927c9fe8fbce7ac07f)
 
 
+* (3/3) Goes to [PAGES](https://github.com/mxochicale/physical-ai-in-healthcare-slides/settings/pages) and select in the menu `Deploy from branch` and select gh-pages
 
 
 ### Push changes and publish slides
-* add feature_branch name to [publish-quarto.yml]( TODO_ADDLINK /publish-quarto.yml)
+Github action to [publish-quarto.yml](https://github.com/mxochicale/physical-ai-in-healthcare-slides/blob/main/.github/workflows/publish-quarto.yml)
 ```bash
 git add .
-git commmit -m '<add message> CI #ISSUE_NUMBER'
+git commit -m '<add message> CI #ISSUE_NUMBER'
 git push origin <feature_branch>
 ```
 
