@@ -12,12 +12,13 @@ rm download_install_quart.bash
 quarto check
 ```
 
-### Quarto extensions?
+### Quarto extensions
+Install quarto extensions. See more [extensions](https://github.com/quarto-ext)
 ```
 quarto list extensions
-quarto add parmsam/quarto-subtitles
-quarto remove parmsam/subtitles
-#https://github.com/parmsam/quarto-subtitles
+quarto add quarto-ext/fontawesome
+#quarto remove quarto-ext/fontawesome
+#https://github.com/quarto-ext/fontawesome
 ```
 
 ### Edit and preview slices

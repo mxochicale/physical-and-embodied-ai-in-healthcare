@@ -6,6 +6,5 @@
 slides/.gitignore
 slides/docs
 slides/site_libs
-slides/_extensions
 slides/index_files
 slides/index.html
