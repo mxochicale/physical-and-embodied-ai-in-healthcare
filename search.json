@@ -1,17 +1,31 @@
 [
   {
+    "objectID": "index.html#key-differences",
+    "href": "index.html#key-differences",
+    "title": "",
+    "section": "Key Differences",
+    "text": "Key Differences\n\nEmbodied AI\n\n\nDefinition: AI with a physical form (robots, self-driving cards) integreated into the environment.\nFocus: Learning and adapting through physical interactions with the environment.\nTech: Real-world sensors and actuators for live perception and action.\nGoal: To adapt and make intelligence decisions through physical engagement.\n\n\n\nPhysical AI\n\n\nDefintion: Any AI that models, reasons, or predicts aspects of the physical world.\nFocus: Understanding and reasoning about physical and virtual worlds.\nTech: Virtual environments, synthetic data generation, and simulation tools.\nGoal: To develop models that understand and predict the dynamics of the physical world.\n\n\n\n🤖 Speaker notes go here.\nhttps://medium.com/@thevalleylife/ai-terms-explained-embodied-ai-vs-physical-ai-2ad3bec23792\nhttps://www.linkedin.com/pulse/physical-ai-convergence-embodied-living-intelligence-kai-xin-thia-76kkc 1. Embodied AI and the Rise of Generalist Robot Policies 2. The Role of Simulation and Synthetic Data Generation in Physical AI 3. From LLMs to LAMs: Towards Action-Oriented AI 4. Bioengineering and the Potential of Organoid Intelligence\nhttps://www.linkedin.com/pulse/understanding-physical-ai-embodied-agentic-prabhjot-kaur-gosal-ph-d–ojrac * Embodied AI: This is the easiest one to explain. Basically, when AI is integrated into a physical entity, it is called embodied AI (AI in a physical body). Examples include a self-driving car, robot, etc. * Physical AI: I see this as an ecosystem/simulation world that mimics the real world. It essentially provides training field for the embodied AI. I also see this as a synonym of digital twin. * Agentic AI: Agent is any entity that can make decisions autonomously to achieve a certain goal. This goal may or may not require the agent to interact with the physical world/things.\nhttps://www.nvidia.com/en-us/glossary/generative-physical-ai/ * How Does Physical AI Work? * What Is the Role of Reinforcement Learning in Physical AI? * Why Is Physical AI Important? * How Can You Get Started With Physical AI? * Construct a virtual 3D environment * Generate 3D-to-real synthetic data * Train and validate * Deploy"
+  },
+  {
+    "objectID": "index.html#the-role-of-physical-embodied-ai-in-healthcare",
+    "href": "index.html#the-role-of-physical-embodied-ai-in-healthcare",
+    "title": "",
+    "section": "The Role of Physical & Embodied AI in Healthcare",
+    "text": "The Role of Physical & Embodied AI in Healthcare\n\nRobotic Surgery\nAI-Enhanced Medical Devices\nHospital and Patient Care Automation\nRehabilitation & Assistive Robots\nRemote Care and Telepresence\nDiagnostics with Physical and Embodied AI\nElderly & Patient Care Robots\n\n\n🤖 Speaker notes go here."
+  },
+  {
+    "objectID": "index.html#few-benefits-and-challenges",
+    "href": "index.html#few-benefits-and-challenges",
+    "title": "",
+    "section": "Few benefits and challenges",
+    "text": "Few benefits and challenges\n\nBenefits\n\n\nGreater precision and efficiency in treatment.\nReduced human error in procedures.\nImproved patient monitoring and personalized care.\nRelief for healthcare workers facing labor shortages.\nAugment human healthcare workers\n\n\n\nChallenges\n\n\nSafety and reliability in high-stakes clinical settings.\nData Privacy and Security\nEthical issues: autonomy, patient trust, and job displacement.\nHigh costs and integration with existing healthcare infrastructure.\nRegulatory hurdles and ethical considerations.\n\n\n\n🤖 Speaker notes go here."
+  },
+  {
     "objectID": "index.html#github-getting-started-docs",
     "href": "index.html#github-getting-started-docs",
     "title": "",
     "section": " Github: Getting started docs",
     "text": "Github: Getting started docs\n\n\nFigure 1: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
-  },
-  {
-    "objectID": "index.html#github-getting-started-docs-1",
-    "href": "index.html#github-getting-started-docs-1",
-    "title": "",
-    "section": " Github: Getting started docs",
-    "text": "Github: Getting started docs\n\n\nFigure 2: Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow.\n\nSpeaker notes go here."
   },
   {
     "objectID": "index.html#title-of-the-slide",
