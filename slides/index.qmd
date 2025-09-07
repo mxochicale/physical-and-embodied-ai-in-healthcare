@@ -31,16 +31,16 @@ format:
 
 
 <span style="color:#939393; font-size:1.75em; text-align:left; display:block;">
-From Code to Care:    
-The Emerging Role of   
-Physical AI in Healthcare
+**From Code to Care:**     
+The Role of Physical &   
+Embodied AI in Healthcare
 </span>  
 
 [<br>&nbsp;]{style="padding-bottom: 0.25rem;"}  
 [{{< fa solid home >}}](http://mxochicale.github.io/) Miguel Xochicale   
 [
   [
-  [{{< fa brands github >}} `physical-ai-in-healthcare-slides`](https://github.com/mxochicale/physical-ai-in-healthcare-slides)
+  [{{< fa brands github >}} `physical-and-embodied-ai-in-healthcare-slides`](https://mxochicale.github.io/physical-and-embodied-ai-in-healthcare-slides)
   ]{style="border-bottom: 0.5px solid #00ccff;"}
 ]{style="font-size:0.45em;"}
 :::
@@ -59,9 +59,9 @@ Physical AI in Healthcare
 
 
 <!-- *********************** NEW SLIDE *********************** -->
-# Overview {style="font-size: 60%;"} 
+# Overview {style="font-size: 90%;"} 
 
-* [Section title 1](#sectag_title_1)
+* [What is Embodied AI and Physical AI?](#epai)
 * [Section title 2](#sectag_title_2)
 <!--  Comments -->
 <!--  * [Open-Source Software in Healthcare](#sec-ossh) -->
@@ -71,25 +71,132 @@ Physical AI in Healthcare
 
 
 <!-- *********************** NEW SLIDE *********************** -->
-# Section title 1 {#sectag_title_1}
-Subsection title
+# What is Embodied AI and Physical AI? {#epai}
+What are their roles in Healthcare?
 
 ::: {.notes}
   Notes goes here
 :::
 
 
-## {{< fa brands github >}} Github: Getting started docs
+<!-- *********************** NEW SLIDE *********************** -->
+## Key Differences
 
-::: {#fig-template}
+::: {.column width="45%"}
+Embodied AI
 
-![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
+<div style="font-size:0.75em;">
 
-Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow. 
+* **Definition:** AI with a physical form (robots, self-driving cards) integreated into the environment.
+* **Focus:** Learning and adapting through physical interactions with the environment.
+* **Tech:** Real-world sensors and actuators for live perception and action.
+* **Goal:** To adapt and make intelligence decisions through physical engagement.
+</div>
+
 :::
 
+
+::: {.column width="45%"}
+Physical AI
+
+<div style="font-size:0.75em;">
+
+* **Defintion:** Any AI that models, reasons, or predicts aspects of the physical world.
+* **Focus:** Understanding and reasoning about physical and virtual worlds.
+* **Tech:** Virtual environments, synthetic data generation, and simulation tools. 
+* **Goal:** To develop models that understand and predict the dynamics of the physical world.
+</div>
+
+:::
+
+
 ::: {.notes}
-Speaker notes go here.
+🤖 Speaker notes go here.
+
+
+https://medium.com/@thevalleylife/ai-terms-explained-embodied-ai-vs-physical-ai-2ad3bec23792
+
+
+https://www.linkedin.com/pulse/physical-ai-convergence-embodied-living-intelligence-kai-xin-thia-76kkc
+1. Embodied AI and the Rise of Generalist Robot Policies
+2. The Role of Simulation and Synthetic Data Generation in Physical AI
+3. From LLMs to LAMs: Towards Action-Oriented AI
+4. Bioengineering and the Potential of Organoid Intelligence
+
+https://www.linkedin.com/pulse/understanding-physical-ai-embodied-agentic-prabhjot-kaur-gosal-ph-d--ojrac
+* Embodied AI: This is the easiest one to explain. Basically, when AI is integrated into a physical entity, it is called embodied AI (AI in a physical body). Examples include a self-driving car, robot, etc.
+* Physical AI: I see this as an ecosystem/simulation world that mimics the real world. It essentially provides training field for the embodied AI. I also see this as a synonym of digital twin.
+* Agentic AI: Agent is any entity that can make decisions autonomously to achieve a certain goal. This goal may or may not require the agent to interact with the physical world/things.
+
+
+https://www.nvidia.com/en-us/glossary/generative-physical-ai/
+* How Does Physical AI Work?
+* What Is the Role of Reinforcement Learning in Physical AI?
+* Why Is Physical AI Important?
+* How Can You Get Started With Physical AI?
+  * Construct a virtual 3D environment
+  * Generate 3D-to-real synthetic data
+  * Train and validate
+  * Deploy
+
+:::
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## The Role of Physical & Embodied AI in Healthcare
+
+* Robotic Surgery
+* AI-Enhanced Medical Devices
+* Hospital and Patient Care Automation 
+* Rehabilitation & Assistive Robots
+* Remote Care and Telepresence
+* Diagnostics with Physical and Embodied AI
+* Elderly & Patient Care Robots
+
+::: {.notes}
+🤖 Speaker notes go here.
+:::
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## Few benefits and challenges
+
+::: {.column width="45%"}
+Benefits
+
+<div style="font-size:0.75em;">
+
+* Greater precision and efficiency in treatment.
+* Reduced human error in procedures.
+* Improved patient monitoring and personalized care.
+* Relief for healthcare workers facing labor shortages.
+* Augment human healthcare workers
+
+</div>
+
+:::
+
+
+::: {.column width="45%"}
+Challenges
+
+<div style="font-size:0.75em;">
+
+* Safety and reliability in high-stakes clinical settings.
+* Data Privacy and Security
+* Ethical issues: autonomy, patient trust, and job displacement.
+* High costs and integration with existing healthcare infrastructure.
+* Regulatory hurdles and ethical considerations.
+
+</div>
+
+:::
+
+
+::: {.notes}
+🤖 Speaker notes go here.
 :::
 
 

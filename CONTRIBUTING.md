@@ -10,11 +10,11 @@ Please note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in
 * Setting up signing Git commits with your signing key as suggested [here](https://github.com/mxochicale/tools/blob/main/github/CHEATSHEET.md).
 * Clone the repository by typing (or copying) the following lines in a terminal
 ```
-git clone git@github.com:mxochicale/physical-ai-in-healthcare-slides.git
+git clone git@github.com:mxochicale/physical-and-embodied-ai-in-healthcare-slides.git
 ```
 
 ## New issues
-* Open an issue (bug report, feature request, or something is not working): https://github.com/mxochicale/physical-ai-in-healthcare-slides/issues/new
+* Open an issue (bug report, feature request, or something is not working): https://github.com/mxochicale/physical-and-embodied-ai-in-healthcare-slides/issues/new
 * Workflow for issue management 
 ```mermaid
   flowchart TD;
@@ -31,7 +31,7 @@ git clone git@github.com:mxochicale/physical-ai-in-healthcare-slides.git
 ## Committing and pushing changes 
 1. Clone this repo 
 ```
-git clone git@github.com:mxochicale/physical-ai-in-healthcare-slides.git
+git clone git@github.com:mxochicale/physical-and-embodied-ai-in-healthcare-slides.git
 ``` 
 2. Create new branch using issue number
 ```
