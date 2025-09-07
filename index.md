@@ -18,9 +18,7 @@ Physical AI in Healthcare </span>
 
 <div class="footer">
 
-<span class="dim-text" style="&quot;text-align:left;'">Q4-2025
-[(grid-worms-animation 2023 by
-saforem2)](https://github.com/saforem2/grid-worms-animation/)</span>
+<span class="dim-text" style="&quot;text-align:left;'">Q4-2025</span>
 
 </div>
 
