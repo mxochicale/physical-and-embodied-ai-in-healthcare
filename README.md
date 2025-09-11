@@ -6,8 +6,12 @@ Physical and Embodied AI represents a transformative approach to healthcare, com
 
 ## :school_satchel: Slides
 
-https://mxochicale.github.io/physical-and-embodied-ai-in-healthcare-slides
+https://mxochicale.github.io/physical-and-embodied-ai-in-healthcare
 
+## Discussion forum 
+
+https://github.com/mxochicale/physical-and-embodied-ai-in-healthcare/discussions
+  
 ## :octocat: Clone repository
 See [CONTRIBUTING](CONTRIBUTING.md) for details on clonning repo, raising issues and guidelines for contributing.
 
