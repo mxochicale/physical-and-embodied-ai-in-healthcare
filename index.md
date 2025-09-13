@@ -12,7 +12,7 @@ Embodied AI in Healthcare </span>
 <span style="padding-bottom: 0.25rem;"><br> </span>  
 [](http://mxochicale.github.io/) Miguel Xochicale  
 <span style="font-size:0.45em;"><span style="border-bottom: 0.5px solid #00ccff;">[
-`physical-and-embodied-ai-in-healthcare-slides`](https://mxochicale.github.io/physical-and-embodied-ai-in-healthcare-slides)</span></span>
+`physical-and-embodied-ai-in-healthcare`](https://mxochicale.github.io/physical-and-embodied-ai-in-healthcare)</span></span>
 
 </div>
 
@@ -33,7 +33,8 @@ Embodied AI in Healthcare </span>
 # Overview
 
 - [What is Embodied AI and Physical AI?](#epai)
-- [Section title 2](#sectag_title_2) <!--  Comments -->
+- [Intro to Embodied AI](#intro_eai)
+- [Section title 3](#sectag_title_3) <!--  Comments -->
   <!--  * [Open-Source Software in Healthcare](#sec-ossh) -->
 
 <!-- *********************** NEW SLIDE *********************** -->
@@ -183,7 +184,68 @@ Challenges
 
 <!-- *********************** NEW SLIDE *********************** -->
 
-# Section title 2
+# Intro to Embodied AI
+
+<div class="notes">
+
+Notes goes here
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## Multimodal Sensing
+
+<img src="figures/multimodal-sensing-liu2025.svg"
+data-fig-align="center" />
+
+<div style="font-size: 40%;">
+
+Fig 11 from **Liu et al. 2025** “Neural Brain: A Neuroscience-inspired
+Framework for Embodied Agents.” arXiv preprint
+https://arxiv.org/abs/2505.07634
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
+
+<div id="fig-template">
+
+Getting started documentation provide with a range of links to setup,
+use, run and debug application including github workflow.
+
+Figure 1
+
+</div>
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+## Action mechanisms of Embodied AI
+
+<img src="figures/mechanisms-embodiedAI-liu2025.svg"
+data-fig-align="center" />
+
+<div style="font-size: 40%;">
+
+Fig 15 from **Liu et al. 2025** “Neural Brain: A Neuroscience-inspired
+Framework for Embodied Agents.” arXiv preprint
+https://arxiv.org/abs/2505.07634
+
+</div>
+
+<div class="notes">
+
+Speaker notes go here.
+
+</div>
+
+<!-- *********************** NEW SLIDE *********************** -->
+
+# Section title 3
 
 Subsection title
 
@@ -193,6 +255,8 @@ Notes goes here
 
 </div>
 
+<!-- *********************** NEW SLIDE *********************** -->
+
 ##  Github: Getting started docs
 
 <div id="fig-template">
@@ -200,8 +264,17 @@ Notes goes here
 <img src="figures/00_template-vector-images/drawing-v00.svg"
 data-fig-align="center" />
 
-Figure 1: Getting started documentation provide with a range of links to
+Figure 2: Getting started documentation provide with a range of links to
 setup, use, run and debug application including github workflow.
+
+</div>
+
+<div style="font-size: 40%;">
+
+**Sciortino et al. 2017** in Computers in Biology and Medicine
+https://doi.org/10.1016/j.compbiomed.2017.01.008;  
+**He et al. 2021** in Front. Med.
+https://doi.org/10.3389/fmed.2021.729978
 
 </div>
 

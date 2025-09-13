@@ -1,1 +1,1 @@
-Sitemap: https://mxochicale.github.io/physical-and-embodied-ai-in-healthcare-slides/sitemap.xml
+Sitemap: https://mxochicale.github.io/physical-and-embodied-ai-in-healthcare/sitemap.xml
