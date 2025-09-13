@@ -40,7 +40,7 @@ Embodied AI in Healthcare
 [{{< fa solid home >}}](http://mxochicale.github.io/) Miguel Xochicale   
 [
   [
-  [{{< fa brands github >}} `physical-and-embodied-ai-in-healthcare-slides`](https://mxochicale.github.io/physical-and-embodied-ai-in-healthcare-slides)
+  [{{< fa brands github >}} `physical-and-embodied-ai-in-healthcare`](https://mxochicale.github.io/physical-and-embodied-ai-in-healthcare)
   ]{style="border-bottom: 0.5px solid #00ccff;"}
 ]{style="font-size:0.45em;"}
 :::

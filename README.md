@@ -8,7 +8,7 @@ Physical and Embodied AI represents a transformative approach to healthcare, com
 
 https://mxochicale.github.io/physical-and-embodied-ai-in-healthcare
 
-## Discussion forum 
+## :speaking_head: Discussion forum 
 
 https://github.com/mxochicale/physical-and-embodied-ai-in-healthcare/discussions
   
