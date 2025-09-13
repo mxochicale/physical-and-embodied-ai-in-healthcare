@@ -62,7 +62,8 @@ Embodied AI in Healthcare
 # Overview {style="font-size: 90%;"} 
 
 * [What is Embodied AI and Physical AI?](#epai)
-* [Section title 2](#sectag_title_2)
+* [Intro to Embodied AI](#intro_eai)
+* [Section title 3](#sectag_title_3)
 <!--  Comments -->
 <!--  * [Open-Source Software in Healthcare](#sec-ossh) -->
 
@@ -201,8 +202,65 @@ Challenges
 
 
 
+
 <!-- *********************** NEW SLIDE *********************** -->
-# Section title 2 {#sectag_title_2}
+# Intro to Embodied AI {#intro_eai}
+
+::: {.notes}
+  Notes goes here
+:::
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## Multimodal Sensing
+
+
+![](figures/multimodal-sensing-liu2025.svg){fig-align=center}
+
+
+
+::: {style="font-size: 40%;"}
+Fig 11 from **Liu et al. 2025** "Neural Brain: A Neuroscience-inspired Framework for Embodied Agents." arXiv preprint https://arxiv.org/abs/2505.07634
+:::
+
+
+::: {.notes}
+Speaker notes go here.
+
+::: {#fig-template}
+
+
+
+Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow. 
+:::
+
+
+:::
+
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+## Action mechanisms of Embodied AI
+
+
+![](figures/mechanisms-embodiedAI-liu2025.svg){fig-align=center}
+
+::: {style="font-size: 40%;"}
+Fig 15 from **Liu et al. 2025** "Neural Brain: A Neuroscience-inspired Framework for Embodied Agents." arXiv preprint https://arxiv.org/abs/2505.07634
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+
+
+
+<!-- *********************** NEW SLIDE *********************** -->
+# Section title 3 {#sectag_title_3}
 Subsection title
 
 ::: {.notes}
@@ -210,6 +268,8 @@ Subsection title
 :::
 
 
+
+<!-- *********************** NEW SLIDE *********************** -->
 ## {{< fa brands github >}} Github: Getting started docs
 
 ::: {#fig-template}
@@ -217,6 +277,11 @@ Subsection title
 ![](figures/00_template-vector-images/drawing-v00.svg){fig-align=center}
 
 Getting started documentation provide with a range of links to setup, use, run and debug application including github workflow. 
+:::
+
+::: {style="font-size: 40%;"}
+**Sciortino et al. 2017** in Computers in Biology and Medicine https://doi.org/10.1016/j.compbiomed.2017.01.008;      
+**He et al. 2021** in Front. Med. https://doi.org/10.3389/fmed.2021.729978
 :::
 
 ::: {.notes}
