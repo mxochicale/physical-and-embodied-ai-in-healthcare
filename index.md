@@ -34,6 +34,7 @@ Embodied AI in Healthcare </span>
 
 - [What is Embodied AI and Physical AI?](#epai)
 - [Intro to Embodied AI](#intro_eai)
+- [Data challenges and opportunities](#data_co)
 - [Section title 3](#sectag_title_3) <!--  Comments -->
   <!--  * [Open-Source Software in Healthcare](#sec-ossh) -->
 
@@ -182,7 +183,7 @@ Challenges
 
 </div>
 
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- *********************** SECTION *********************** -->
 
 # Intro to Embodied AI
 
@@ -243,7 +244,161 @@ Speaker notes go here.
 
 </div>
 
+<!-- *********************** SECTION *********************** -->
+
+# Data challenges and opportunities
+
+Subsection title
+
+<div class="notes">
+
+Notes goes here
+
+</div>
+
 <!-- *********************** NEW SLIDE *********************** -->
+
+## Towards ML-native data comsumption
+
+<div class="column" width="45%">
+
+The 100,000-year data gap
+
+<div style="font-size:0.75em;">
+
+> We would need 100,000 years to match the data that made LLMs possible
+
+- Collecting the right data,
+- Collecting the right way,
+- Collecting from day one
+
+</div>
+
+</div>
+
+<div class="column" width="45%">
+
+ML-native data consumption
+
+<div style="font-size:0.5em;">
+
+> Scalling data-driven robotics is painful
+
+- Record everything in asynchronously into MCAP or ROSbags
+  - MCAP/rosbags are optimised for yesterday’s robotics (ROS1.0) not for
+    the data-driven world of Robotics 2.0 and Physical AI
+- Syncronise data during recording
+  - Imaging discovering your policy learns better at 2x the frequency.
+    Too late, the information is gone
+
+**ML-native data consumption: random access, sharding, batching,
+frequency-flexible.**
+
+</div>
+
+</div>
+
+<div style="font-size: 40%;">
+
+**Stephen James on
+<a href="https://x.com/stepjamUK" target="_blank">X.com</a>**
+
+- <a href="https://x.com/stepjamUK/status/1968283949421179192"
+  target="_blank">Sep 17, 2025 at 1:00 pm</a>  
+- <a href="https://x.com/stepjamUK/status/1966109482708353421"
+  target="_blank">Sep 11, 2025 at 1:00 pm</a>  
+
+</div>
+
+<div class="notes">
+
+ML-native robotics data platform — concrete architecture sketch
+
+Great — below is a practical, implementation-oriented design you can
+take to engineers or use as a spec. It starts from MCAP / ROSbag-style
+recordings and produces ML-native datasets that support random access,
+sharding, batching, and frequency-flexible reads. I include component
+diagrams, data formats, indexing, example metadata, reader APIs,
+sync/resampling strategies, privacy & edge upload, and an MVP → scale
+roadmap.
+
+1 — High-level components (data flow) 2 — Storage & file formats
+(ML-native choices) 3 — Episode & chunk indexing model 4 — Time
+synchronization & canonical timeline 5 — ML Reader API (Python-style
+pseudocode) 6 — Sharding & distributed training 7 — Frequency-flexible
+consumption 8 — Privacy, redaction, and provenance \* On-device
+redaction: face blur, license plate obfuscation, vocal redaction. Save
+redaction metadata (what was transformed and how). \* Provenance: every
+processed shard stores a chain-of-custody: source_mcap_ids,
+preprocessing_version, redaction_policy_id, compression_params. \*
+Access control: catalog + object store enforce ACLs. Audit logs for
+dataset access. 9 — Schema & metadata examples 10 — Ingest / repair
+strategies
+
+11 — Performance & cost trade-offs \* Chunk size: small chunks (1–10s) =
+better random access, more metadata overhead. Large chunks (60–300s) =
+fewer objects, better bandwidth for throughput training. Choose based on
+typical sequence length used by models. \* Shard size: tune to match
+S3/HTTP GET throughput vs number of objects. Typical: 100MB–1GB per
+shard. \* Local cache: essential for training at scale — ephemeral local
+SSD caching of downloaded shards yields 5–20x speedup. \* Compression:
+lossy image compression vs storage cost — choose per-task.
+
+12 — Implementation roadmap (MVP → scale)
+
+MVP (1–2 months)
+
+Ingest MCAP → extract per-topic timestamps + small index; store raw
+MCAPs to S3.
+
+Build per-episode JSON metadata + small SQLite chunk index.
+
+Implement a Python reader that can:
+
+read a chunk,
+
+map topic timestamps to canonical time (using simple offsets),
+
+return sequences by canonical-time windows,
+
+do nearest-frame selection for images, linear interp for numeric.
+
+Provide simple shard-by-episode listing and seed-based sampler.
+
+Phase 2 (3–6 months)
+
+Implement chunker + shard packager (Parquet + blob packs).
+
+Add time-drift detection and piecewise-linear correction.
+
+Add distributed sampler that supports sharding across workers and
+prefetch cache.
+
+Add schema registry and dataset catalog UI.
+
+Phase 3 (6–12 months)
+
+Productionize privacy/redaction on-device with configurable policies.
+
+Add hierarchical indexing for long-horizon efficient retrieval.
+
+Add advanced resampling (antialias, event syncing), stratified sampling,
+and integration with orchestration (Kubernetes jobs).
+
+Add dataset versioning, snapshot diffs, and integrated labeling tools.
+
+13 — Example quick design decisions & heuristics 14 — Quick checklist to
+get an initial prototype running 15 — Shortcomings & research directions
+\* Interpolating images is semantically hard; prefer nearest or
+simulator-based frame synthesis. \* Clock drift in cheap hardware can be
+non-linear; long sessions may require per-interval recalibration. \*
+Label sparsity remains: aim to co-record human/player feedback and use
+self-supervised objectives. \* Dataset bias & privacy are open problems
+— plan for human-in-the-loop audits.
+
+</div>
+
+<!-- *********************** SECTION *********************** -->
 
 # Section title 3
 

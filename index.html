@@ -173,6 +173,7 @@ Embodied AI in Healthcare </span></p>
 <ul>
 <li><a href="#/epai">What is Embodied AI and Physical AI?</a></li>
 <li><a href="#/intro_eai">Intro to Embodied AI</a></li>
+<li><a href="#/data_co">Data challenges and opportunities</a></li>
 <li><a href="#/sectag_title_3">Section title 3</a> <!--  Comments --> <!--  * [Open-Source Software in Healthcare](#sec-ossh) --></li>
 </ul>
 <!-- *********************** NEW SLIDE *********************** -->
@@ -301,7 +302,7 @@ Embodied AI in Healthcare </span></p>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- *********************** NEW SLIDE *********************** -->
+<!-- *********************** SECTION *********************** -->
 </section></section>
 <section>
 <section id="intro_eai" class="title-slide slide level1 center">
@@ -371,7 +372,106 @@ Figure&nbsp;1
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<!-- *********************** SECTION *********************** -->
+</section></section>
+<section>
+<section id="data_co" class="title-slide slide level1 center">
+<h1>Data challenges and opportunities</h1>
+<p>Subsection title</p>
+<aside class="notes">
+<p>Notes goes here</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <!-- *********************** NEW SLIDE *********************** -->
+</section>
+<section id="towards-ml-native-data-comsumption" class="slide level2">
+<h2>Towards ML-native data comsumption</h2>
+<div class="column" style="width:45%;">
+<p>The 100,000-year data gap</p>
+<div style="font-size:0.75em;">
+<blockquote>
+<p>We would need 100,000 years to match the data that made LLMs possible</p>
+</blockquote>
+<ul>
+<li>Collecting the right data,</li>
+<li>Collecting the right way,</li>
+<li>Collecting from day one</li>
+</ul>
+</div>
+</div><div class="column" style="width:45%;">
+<p>ML-native data consumption</p>
+<div style="font-size:0.5em;">
+<blockquote>
+<p>Scalling data-driven robotics is painful</p>
+</blockquote>
+<ul>
+<li>Record everything in asynchronously into MCAP or ROSbags
+<ul>
+<li>MCAP/rosbags are optimised for yesterday’s robotics (ROS1.0) not for the data-driven world of Robotics 2.0 and Physical AI</li>
+</ul></li>
+<li>Syncronise data during recording
+<ul>
+<li>Imaging discovering your policy learns better at 2x the frequency. Too late, the information is gone</li>
+</ul></li>
+</ul>
+<p><strong>ML-native data consumption: random access, sharding, batching, frequency-flexible.</strong></p>
+</div>
+</div><div style="font-size: 40%;">
+<p><strong>Stephen James on <a href="https://x.com/stepjamUK" target="_blank">X.com</a></strong></p>
+<ul>
+<li><a href="https://x.com/stepjamUK/status/1968283949421179192" target="_blank">Sep 17, 2025 at 1:00 pm</a><br>
+</li>
+<li><a href="https://x.com/stepjamUK/status/1966109482708353421" target="_blank">Sep 11, 2025 at 1:00 pm</a><br>
+</li>
+</ul>
+</div>
+<aside class="notes">
+<p>ML-native robotics data platform — concrete architecture sketch</p>
+<p>Great — below is a practical, implementation-oriented design you can take to engineers or use as a spec. It starts from MCAP / ROSbag-style recordings and produces ML-native datasets that support random access, sharding, batching, and frequency-flexible reads. I include component diagrams, data formats, indexing, example metadata, reader APIs, sync/resampling strategies, privacy &amp; edge upload, and an MVP → scale roadmap.</p>
+<p>1 — High-level components (data flow) 2 — Storage &amp; file formats (ML-native choices) 3 — Episode &amp; chunk indexing model 4 — Time synchronization &amp; canonical timeline 5 — ML Reader API (Python-style pseudocode) 6 — Sharding &amp; distributed training 7 — Frequency-flexible consumption 8 — Privacy, redaction, and provenance * On-device redaction: face blur, license plate obfuscation, vocal redaction. Save redaction metadata (what was transformed and how). * Provenance: every processed shard stores a chain-of-custody: source_mcap_ids, preprocessing_version, redaction_policy_id, compression_params. * Access control: catalog + object store enforce ACLs. Audit logs for dataset access. 9 — Schema &amp; metadata examples 10 — Ingest / repair strategies</p>
+<p>11 — Performance &amp; cost trade-offs * Chunk size: small chunks (1–10s) = better random access, more metadata overhead. Large chunks (60–300s) = fewer objects, better bandwidth for throughput training. Choose based on typical sequence length used by models. * Shard size: tune to match S3/HTTP GET throughput vs number of objects. Typical: 100MB–1GB per shard. * Local cache: essential for training at scale — ephemeral local SSD caching of downloaded shards yields 5–20x speedup. * Compression: lossy image compression vs storage cost — choose per-task.</p>
+<p>12 — Implementation roadmap (MVP → scale)</p>
+<p>MVP (1–2 months)</p>
+<p>Ingest MCAP → extract per-topic timestamps + small index; store raw MCAPs to S3.</p>
+<p>Build per-episode JSON metadata + small SQLite chunk index.</p>
+<p>Implement a Python reader that can:</p>
+<p>read a chunk,</p>
+<p>map topic timestamps to canonical time (using simple offsets),</p>
+<p>return sequences by canonical-time windows,</p>
+<p>do nearest-frame selection for images, linear interp for numeric.</p>
+<p>Provide simple shard-by-episode listing and seed-based sampler.</p>
+<p>Phase 2 (3–6 months)</p>
+<p>Implement chunker + shard packager (Parquet + blob packs).</p>
+<p>Add time-drift detection and piecewise-linear correction.</p>
+<p>Add distributed sampler that supports sharding across workers and prefetch cache.</p>
+<p>Add schema registry and dataset catalog UI.</p>
+<p>Phase 3 (6–12 months)</p>
+<p>Productionize privacy/redaction on-device with configurable policies.</p>
+<p>Add hierarchical indexing for long-horizon efficient retrieval.</p>
+<p>Add advanced resampling (antialias, event syncing), stratified sampling, and integration with orchestration (Kubernetes jobs).</p>
+<p>Add dataset versioning, snapshot diffs, and integrated labeling tools.</p>
+<p>13 — Example quick design decisions &amp; heuristics 14 — Quick checklist to get an initial prototype running 15 — Shortcomings &amp; research directions * Interpolating images is semantically hard; prefer nearest or simulator-based frame synthesis. * Clock drift in cheap hardware can be non-linear; long sessions may require per-interval recalibration. * Label sparsity remains: aim to co-record human/player feedback and use self-supervised objectives. * Dataset bias &amp; privacy are open problems — plan for human-in-the-loop audits.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- *********************** SECTION *********************** -->
 </section></section>
 <section>
 <section id="sectag_title_3" class="title-slide slide level1 center">
